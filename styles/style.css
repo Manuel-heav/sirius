@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;500;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    font-size: 14px;    
+    zoom: 0.9; 
+}
+
+#main-header{
+    background-color: #697c8e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+}
+
+#main-header .logo{
+    height: 200px;
+    margin-left: 20px;
+    margin-top: -10px;
+}
+
+#main-header ul{
+    margin: 17px;
+}
+#main-header li{
+    display: inline;
+    padding: 13px;
+}
+
+#main-header li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: .3s;
+    font-weight: 500;
+}
+
+
+#main-header li a:hover{
+    opacity: 0.8;
+}
+
+/* Showcase styles */
+
+.showcase{
+    display: flex;
+    flex-direction: column;
+    background-image: url("https://dfd5gcc6b7vw5.cloudfront.net/assets/thenx-header-b0f1a2685be5ff4f739a7333baf90c8045a39f170347548609b634e39709357c.jpg");
+   background-size: cover;
+   height: 80vh;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+}
+
+.showcase::after{
+   content: '';
+   width: 100%;
+   height: 100%;
+   left: 0;
+   top: 0;
+   position: absolute;
+   background: black;
+   opacity: 1;
+}
+
+.showcase h1{
+    z-index: 100;
+    color: #FEBC62;
+    width: 60%;
+    text-align: center;
+    line-height: 1.3;
+    font-size: 3rem;
+    font-weight: 800;
+    letter-spacing: -.025em;
+}
+.showcase h2{
+    font-size: 50px;
+    z-index: 2;
+    font-size: 2.3rem;
+    font-weight: 800;
+    letter-spacing: -.025em;
+    color: rgb(255 255 255/1);
+}
+
+.showcase p{
+    z-index: 100;
+    color: #fff;
+    font-size: 1.025rem;
+    line-height: 1.75rem;
+    color: hsla(0,0%,100%,.5);
+    margin-top: 10px;;
+}
+
+
+/* Opening and Closing Menu on Phones */
+.openMenu{
+    font-size: 25px;
+    margin-top: 2px !important;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+    color: #fff;
+}
+
+
+.closeMenu{
+    font-size: 25px;
+    display: none;
+    cursor: pointer;
+    color: #fff;
+}
+
+@media screen and (max-width: 1274px) {
+    nav{
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      right: 0;
+      left:0;
+      z-index: 1000;  
+      flex-direction: column;
+      justify-content: center;
+      background-color: #697c8e;
+      align-items: center;
+      transition: top 0.7s ease;
+      display: none;
+    }
+    nav ul li a{
+        display: block;
+    }
+    .closeMenu{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    .openMenu{
+        display: block;
+    }
+
+    .showcase h1{
+        font-size: 2rem;
+        width: 100%;
+    }
+    .showcase h2{
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+    }
+
+    .showcase p{
+        font-size: 1rem;
+        text-align: center;
+    }
+}
