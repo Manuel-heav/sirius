@@ -12,7 +12,7 @@ body{
 }
 
 #main-header{
-    background-color: #697c8e;
+    background-color: #0C102E;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -51,8 +51,10 @@ body{
 .showcase{
     display: flex;
     flex-direction: column;
-    background-image: url("https://dfd5gcc6b7vw5.cloudfront.net/assets/thenx-header-b0f1a2685be5ff4f739a7333baf90c8045a39f170347548609b634e39709357c.jpg");
+    background-image: url("https://images.pexels.com/photos/8721318/pexels-photo-8721318.jpeg?auto=compress&cs=tinysrgb&w=1600");
+    /* background-image: url("https://images.pexels.com/photos/4144179/pexels-photo-4144179.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"); */
    background-size: cover;
+   background-position: top;
    height: 80vh;
    justify-content: center;
    align-items: center;
@@ -67,7 +69,7 @@ body{
    top: 0;
    position: absolute;
    background: black;
-   opacity: 1;
+   opacity: 0.4;
 }
 
 .showcase h1{
