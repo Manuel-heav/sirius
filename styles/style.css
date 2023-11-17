@@ -20,9 +20,9 @@ body{
 }
 
 #main-header .logo{
-    height: 200px;
+    height: 500px;
     margin-left: 20px;
-    margin-top: -10px;
+    margin-top: 90px;
 }
 
 #main-header ul{
