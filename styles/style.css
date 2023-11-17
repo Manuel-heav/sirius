@@ -8,7 +8,8 @@ body{
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
     font-size: 14px;    
-    /* width: 100%; */
+    background: rgb(2,0,36);
+    background: linear-gradient(86deg, rgba(2,0,36,1) 26%, rgba(10,6,46,1) 55%, rgba(3,1,23,1) 84%, rgba(3,1,23,1) 100%);
 }
 
 #main-header{
@@ -120,6 +121,103 @@ body{
     color: #fff;
 }
 
+
+/* Collection */
+#collection{
+    background: rgb(2,0,36);
+    background: linear-gradient(86deg, rgba(2,0,36,1) 26%, rgba(10,6,46,1) 55%, rgba(3,1,23,1) 84%, rgba(3,1,23,1) 100%);
+}
+
+.collection_container{
+    height: 100vh;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    color: #fff;
+}
+
+.collection_container .collection_text h1{
+    font-size: 2.3rem;
+    font-weight: 800;
+    letter-spacing: -.025em;
+    color: rgb(255 255 255/1);
+}
+
+.collection_container .collection_text p{
+    font-size: 1.025rem;
+    line-height: 1.75rem;
+    color: hsla(0,0%,100%,.5);
+    margin-top: 10px;
+}
+
+.collection_container .collection_card .card{
+    /* background-color: rgba(17, 25, 40, 0.75); */
+    background-color: rgba(17, 25, 40, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+    cursor: pointer;
+    line-height: 30px;
+    color: #e1e1e4;
+    height: 50%;
+    font-size: .63rem;
+    height: 150px;
+    gap: 18px;
+}
+
+.collection_container .collection_card .card:hover{
+    box-shadow: 1px -1px 17px -5px rgba(255,255,255,0.75);
+    -webkit-box-shadow: 1px -1px 17px -5px rgba(255,255,255,0.75);
+    -moz-box-shadow: 1px -1px 17px -5px rgba(255,255,255,0.75);
+}
+
+
+.collection_card{
+    flex: 5;
+    display: grid;
+    gap: 18px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.collection_text{
+    flex: 4;
+}
+
+.card_text h2{
+    font-size: 17px;
+}
+
+.icon{
+    height: 50px;
+    animation: spin 3s infinite;
+    animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.card p{
+    font-size: 12px;
+    line-height: 17px;
+    color: hsla(0,0%,100%,.5);
+}
+
+/* Animations */
+@keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+
+
 @media screen and (max-width: 1274px) {
     nav{
       height: 100vh;
@@ -162,13 +260,44 @@ body{
         font-size: 1rem;
         text-align: center;
     }
+
+    .collection_container{
+        width: 75%;
+        height: 170vh;
+        display: block;
+    }
+    
+    .collection_card{
+        display: block; 
+    }
+
+    .collection_container .collection_text h1{
+        font-size: 1.8rem;
+        margin-top: 40px;
+    }
+    
+    .collection_container .collection_text p{
+        font-size: 1rem;
+        margin-bottom: 40px;
+    }
+    .collection_container .collection_card .card{
+        
+        margin-top: 20px;
+    }
+    
+    
 }
 
 
 @media screen and (max-width: 450px) {
-#main-header .logo{
-    height: 350px;
-    margin-left: -80px;
-    margin-top: 60px;
-}
+    #main-header .logo{
+        height: 350px;
+        margin-left: -80px;
+        margin-top: 60px;
+    }
+
+    .icon{
+        display: none;
+    }
+
 }
