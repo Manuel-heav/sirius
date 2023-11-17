@@ -10,5 +10,5 @@ openMenu.addEventListener("click", (e) => {
 
 closeMenu.addEventListener("click", (e) => {
   e.preventDefault();
-  nav.style.top = "-100%";
+  nav.style.top = "-200%";
 });
