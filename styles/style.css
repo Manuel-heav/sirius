@@ -247,7 +247,7 @@ body{
 /* Modernization */
 #modernization{
     color: #fff;
-    height: 90vh;
+    height: 100vh;
     width: 70%;
     margin: auto;
     display: flex;
@@ -286,6 +286,34 @@ body{
     height: 300px;
     border-radius: 10px;
 }
+
+.partners-inner_container img{
+    height: 200px;
+}
+
+.partners-inner_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+}
+
+.partners_container{
+    width: 70%;
+    text-align: center;
+    margin: auto;
+}
+
+.partners_container h1{
+    text-align: center;
+    margin-bottom:50px;
+    margin-top: 40px;
+    margin-left: -100px;
+    color: #FEBC62;
+    font-size: 2.3rem;
+    font-weight: 800;
+    letter-spacing: -.025em;
+}
+
 /* Animations */
 @keyframes spin {
     0% {
@@ -379,6 +407,13 @@ body{
     }
     #modernization .modernization_container img{
         display: none;    
+    }
+
+    .partners-inner_container{
+        display: block;
+    }
+    .partners_container h1{
+        margin-left: -1px;;
     }
 
 }
