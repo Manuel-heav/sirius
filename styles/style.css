@@ -324,6 +324,55 @@ body {
     letter-spacing: -.025em;
 }
 
+/* Contact */
+
+#contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.contact_container{
+    color: #fff;
+}
+
+#contact .contact_container input, textarea{
+    display: block;
+    width: 100%;
+    margin: 10px 0px;
+}
+
+#contact .contact_container input, textarea:focus{
+    outline: none;
+}
+
+#contact .contact_container input{
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+}
+
+#contact .contact_container textarea{
+    border-radius: 8px;
+}
+
+#contact .contact_container h1{
+    text-align: center;
+    margin-top: 40px;
+    color: #FEBC62;
+    font-size: 2.3rem;
+    font-weight: 800;
+    letter-spacing: -.025em;
+}
+
+#contact .contact_container p{
+    font-size: 1.025rem;
+    line-height: 1.75rem;
+    color: hsla(0, 0%, 100%, .5);
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
 /* Animations */
 @keyframes spin {
     0% {
