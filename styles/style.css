@@ -6,9 +6,11 @@
     box-sizing: border-box;
 }
 
+html, body {
+    overflow-x: hidden;
+}
 body {
     font-family: 'Inter', sans-serif;
-    overflow-x: hidden;
     line-height: 1.6;
     font-size: 14px;
     background: rgb(2, 0, 36);
