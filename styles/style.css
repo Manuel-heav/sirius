@@ -331,8 +331,12 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    margin-top: 200px;
 }
 .contact_container{
+    background-color: #0e1538;
+    padding: 50px;
+    border-radius: 30px;
     color: #fff;
 }
 
@@ -371,6 +375,16 @@ body {
     color: hsla(0, 0%, 100%, .5);
     margin-top: 10px;
     margin-bottom: 20px;
+}
+
+#contact .contact_container button{
+    width: 100%;
+    background-color: #FEBC62;
+    color: #fff;
+    padding: 10px;
+    border: none; 
+    border-radius: 10px;
+    cursor: pointer;
 }
 
 /* Animations */
