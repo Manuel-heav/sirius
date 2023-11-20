@@ -17,7 +17,7 @@
             <nav>
                 <ul>
                     <li><a href="#about">About Us</a></li>
-                    <li><a href="#career">Careers</a></li>
+                    <li><a href="#modernization">Careers</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <div class="closeMenu"><i class="fa fa-times"></i></div>
                 </ul>
@@ -107,8 +107,7 @@
             <h1>Data Modernization</h1>
             <div class="modernization-inner_container">
                 <p>Data modernization refers to the process of transforming and upgrading an organization's data infrastructure, systems, and practices to keep up with the evolving demands of the digital age. It involves adopting modern technologies, methodologies, and tools to effectively collect, store, manage, analyze, and leverage data for decision-making and operational efficiency.
-
-                    </p>
+                </p>
 
                 <img src="./assets/modern.jpg" alt="">
             </div>
@@ -132,7 +131,9 @@
     </section>
 
     <!-- Partners Section -->
-    <section>
+    <section data-aos="fade-top"
+    data-aos-duration="2000"
+    data-aos-easing="ease-in-out">
         <div class="partners_container">
             <h1>Our Partners</h1>
             <div class="partners-inner_container">
@@ -149,15 +150,17 @@
     </section>
 
     <!-- Contact Us section -->
-    <section id="contact">
+    <section id="contact" data-aos="fade-right"
+    data-aos-duration="2000"
+    data-aos-easing="ease-in-out">
         <div class="contact_container">
             <h1>Connect With Us</h1>
             <p>Use our contact form to get in touch with our consulting team.</p>
             <form action="">
                 <label for="">Name</label>
-                <input type="text">
+                <input type="text" required>
                 <label for="">Email</label>
-                <input type="email">
+                <input type="email" required>
                 <label for="">Message</label>
                 <textarea name="" id="" cols="30" rows="10"></textarea>
                 <button type="submit">Submit</button>
