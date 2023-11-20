@@ -387,6 +387,24 @@ body {
     cursor: pointer;
 }
 
+/* Footer */
+#footer{
+    background-color: #0C102E;
+    height: 20vh;
+}
+
+.footer_container{
+    padding-top: 20px;
+}
+
+#footer p{
+    text-align: center;
+    font-size: 1.025rem;
+    line-height: 1.75rem;
+    color:#fff;
+    margin-top: 10px;
+}
+
 /* Animations */
 @keyframes spin {
     0% {
