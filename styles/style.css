@@ -334,7 +334,9 @@ a{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    margin-bottom: 100px;
     margin-top: 200px;
+
 }
 .contact_container{
     background-color: #0e1538;
