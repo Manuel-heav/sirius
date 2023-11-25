@@ -33,3 +33,21 @@ closeMenu.addEventListener("click", (e) => {
   e.preventDefault();
   nav.style.top = "-200%";
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const themeToggle = document.getElementById("theme-toggle");
+  const themeLink = document.getElementById("theme-style");
+
+  // Function to toggle between light and dark themes
+  function toggleTheme() {
+    // Check if the current theme is light
+    const isLightTheme = themeLink.href.includes("/styles/style.css");
+
+    // Toggle between light and dark themes
+    themeLink.href = isLightTheme ? "/styles/dark.css" : "/styles/style.css";
+    console.log(themeLink.href);
+  }
+
+  // Attach the toggleTheme function to the button click event
+  themeToggle.addEventListener("click", toggleTheme);
+});
