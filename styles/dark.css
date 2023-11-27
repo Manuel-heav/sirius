@@ -555,7 +555,7 @@ a{
 
     .collection_container {
         width: 75%;
-        height: 170vh;
+        height: 150vh;
         display: block;
     }
 
@@ -659,5 +659,12 @@ a{
         height: 80vh;
         margin-bottom: 100px;
         margin-top: 0px;
+    }
+
+}
+
+@media screen and (max-width: 390px) {
+    .collection_container {
+        height: 180vh;
     }
 }
