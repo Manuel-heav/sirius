@@ -22,6 +22,8 @@ AOS.init({
 const nav = document.querySelector("nav");
 const openMenu = document.querySelector(".openMenu");
 const closeMenu = document.querySelector(".closeMenu");
+const cards = document.querySelectorAll(".card");
+const closeBtns = document.querySelectorAll(".modal-close");
 
 openMenu.addEventListener("click", (e) => {
   e.preventDefault();
@@ -34,20 +36,20 @@ closeMenu.addEventListener("click", (e) => {
   nav.style.top = "-200%";
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-  const themeToggle = document.getElementById("theme-toggle");
-  const themeLink = document.getElementById("theme-style");
+// console.log(card);
+console.log(213);
 
-  // Function to toggle between light and dark themes
-  function toggleTheme() {
-    // Check if the current theme is light
-    const isLightTheme = themeLink.href.includes("/styles/style.css");
+cards.forEach(function (btn) {
+  console.log(btn);
+  btn.onclick = function () {
+    let modal = btn.getAttribute("data-modal");
+    console.log(modal);
+    document.getElementById(modal).style.display = "block";
+  };
+});
 
-    // Toggle between light and dark themes
-    themeLink.href = isLightTheme ? "/styles/dark.css" : "/styles/style.css";
-    console.log(themeLink.href);
-  }
-
-  // Attach the toggleTheme function to the button click event
-  themeToggle.addEventListener("click", toggleTheme);
+closeBtns.forEach(function (btn) {
+  btn.onclick = function () {
+    btn.closest(".modal").style.display = "none";
+  };
 });

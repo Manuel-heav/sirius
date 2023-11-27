@@ -7,7 +7,7 @@
     <script src="https://kit.fontawesome.com/5066bb9136.js" crossorigin="anonymous"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <link rel="stylesheet" href="styles/style.css" id="theme-style">
+    <link rel="stylesheet" href="styles/dark.css" id="theme-style">
     <link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAADw0LAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABEREAAAAAAAAAAQAAAAAAARERAAAAAAABAAAAAAAAAAEREQAAAAAAAAAAAAAAAAABEREAAAAAAAAQAQAAAAAAABABAAAAAAABEREAAAAAAAAAAAAAAAAAARERAAAAAAAAAAEAAAAAAAEREQAAAAAAAQAAAAAAAAABEREAAAD4PwAA/78AAPg/AAD7/wAA+D8AAP//AAD4PwAA/b8AAP2/AAD4PwAA//8AAPg/AAD/vwAA+D8AAPv/AAD4PwAA" rel="icon" type="image/x-icon">
 </head>
 <body>
@@ -46,45 +46,96 @@
         <div class="collection_card" data-aos="fade-down"
         data-aos-duration="1000"
         data-aos-easing="ease-in-out">
-            <a class="card" href="#monetization">
+            <button class="card" href="#monetization" data-modal="mon_btn">
                 <div class="card_text" >
                    <h2>Data Monetization</h2>
                    <p>Data Strategy and ROI Elevate the Enterprice Data as a Product.</p>     
                 </div>
                 <img src="./assets/brain.svg" class="icon">
-            </a>
+            </button>
 
-            <a class="card" href="#intelligence">
+            <button class="card" href="#intelligence" data-modal="int_btn">
                 <div class="card_text">
                    <h2>Data Intelligence</h2>
                    <p>Data Ops Lifecycle, Management Advanced Analytics, Business Intelligence, Visualization and Storytelling.</p>     
                 </div>
                 <img src="./assets/datacenter.svg" class="icon">
-            </a>
+            </button>
 
-            <a class="card" href="#modernization">
+            <button class="card" href="#modernization" data-modal="mod_btn">
                 <div class="card_text">
                    <h2>Data Modernization</h2>
                    <p>Maturity Assessment, Data Architecture and Design, Cloud Technology and Vendor Assessment, Data Fabric and Data Mesh.</p>     
                 </div>
                 <img src="./assets/people.svg" class="icon">
-            </a>
+            </button>
 
-                <a class="card" href="#advisory">
+                <button class="card" href="#advisory" data-modal="ad_btn">
                     <div class="card_text">
                     <h2>Advisory and Consulting</h2>
                     <p>Building Data Culture, New Data Management Tools and Technology Assessment, Organizational Structure and Roles.</p>     
                 </div>
                 <img src="./assets/cloud.svg" class="icon">
-            </a>
+            </button>
 
-             <a class="card" href="#governance">
+             <button class="card" href="#governance" data-modal="gov_btn">
                 <div class="card_text">
                 <h2>Data Governance</h2>
                 <p>Master Data Management, Data Quality, Data Lineage.</p> 
             </div>
             <img src="./assets/storage.svg" class="icon">
-        </a>
+        </button>
+            </div>
+
+            <!-- Modal Content -->
+            <div class="modal" id="mon_btn">
+                <div class="modal-content">
+                    <div class="modal-header">
+                       Data Monetization
+                       <button class="modal-close"><i class="fa fa-times"></i></button>
+                    </div>
+                    <div class="modal-body">Unlock the full potential of your data with our Data Monetization services. At Sirius Data Solutions, we specialize in implementing advanced data management techniques, leveraging cloud computing, and employing sophisticated analytics to extract maximum value from your data. Our approach involves identifying opportunities to generate revenue, enhance customer experiences, and optimize operational efficiency through innovative data strategies. Transform your organization's data into a valuable resource with our tailored solutions and propel your business to new heights of success.</div>
+                 </div>
+            </div>
+
+            <div class="modal" id="int_btn">
+                <div class="modal-content">
+                    <div class="modal-header">
+                       Data Intelligence
+                       <button class="modal-close"><i class="fa fa-times"></i></button>
+                    </div>
+                    <div class="modal-body">Empower your business with actionable insights through our Data Intelligence services. At Sirius Data Solutions, we understand the importance of data-driven decision-making. Our Data Intelligence solutions cover the Data Ops Lifecycle, Management Advanced Analytics, Business Intelligence, Visualization, and Storytelling. By leveraging modern technologies and methodologies, we help you unlock the full potential of your data, providing you with the tools and insights needed to make informed and strategic decisions. Elevate your data intelligence capabilities with our comprehensive suite of services.</div>
+                 </div>
+            </div>
+
+            <div class="modal" id="mod_btn">
+                <div class="modal-content">
+                    <div class="modal-header">
+                       Data Modernization
+                       <button class="modal-close"><i class="fa fa-times"></i></button>
+                    </div>
+                    <div class="modal-body">Data modernization refers to the process of transforming and upgrading an organization's data infrastructure, systems, and practices to keep up with the evolving demands of the digital age. It involves adopting modern technologies, methodologies, and tools to effectively collect, store, manage, analyze, and leverage data for decision-making and operational efficiency.</div>
+                 </div>
+            </div>
+
+            <div class="modal" id="ad_btn">
+                <div class="modal-content">
+                    <div class="modal-header">
+                       Advisory and Consulting
+                       <button class="modal-close"><i class="fa fa-times"></i></button>
+                    </div>
+                    <div class="modal-body">Navigate the complexities of the digital age with our Advisory and Consulting services. Sirius Data Solutions offers strategic guidance in building a data-centric culture, assessing new data management tools and technologies, and optimizing organizational structure and roles. Our experienced professionals combine strategic thinking with practical insights to deliver customized strategies and actionable recommendations. Whether you're looking to optimize operations, enhance your digital presence, or streamline business processes, we are here to be your trusted partner in driving your business forward.</div>
+                 </div>
+            </div>
+
+            <div class="modal" id="gov_btn">
+                <div class="modal-content">
+                    <div class="modal-header">
+                       Data Governance
+                       <button class="modal-close"><i class="fa fa-times"></i></button>
+                    </div>
+                    <div class="modal-body">Ensure the integrity and quality of your data assets with our Data Governance services. Sirius Data Solutions is committed to helping you establish robust data governance practices, including Master Data Management, Data Quality, and Data Lineage. By implementing effective governance, we enable you to maintain accurate and reliable data throughout its lifecycle. Trust us to be your partner in building a solid foundation for data management, enhancing decision-making processes, and ensuring compliance with industry standards and regulations..</div>
+                 </div>
             </div>
         </div>
     </section>
