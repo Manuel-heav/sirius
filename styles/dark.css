@@ -446,6 +446,13 @@ a{
     height: 300px;
     border-radius: 10px;
 }
+
+.modal-content p{
+    font-size: 1.025rem;
+    line-height: 1.75rem;
+    color: hsla(0, 0%, 100%, .5);
+}
+
 .modal-header{
     font-weight: 500;
     padding: 10px 0;
