@@ -423,7 +423,11 @@ a{
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.8);
     display: none;  
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+    animation: fadeInOut 0.5s ease-in-out forwards;
 }
+
 
 .modal-content{
     background-color: #0e1538;
@@ -436,6 +440,12 @@ a{
     z-index: 10001
 }
 
+.modal-content img{
+    width: 100%;
+    object-fit: cover;
+    height: 300px;
+    border-radius: 10px;
+}
 .modal-header{
     font-weight: 500;
     padding: 10px 0;
@@ -466,6 +476,16 @@ a{
         transform: rotate(360deg);
     }
 }
+
+@keyframes fadeInOut {
+    0% {
+       opacity: 0;
+    }
+    100% {
+       opacity: 1;
+    }
+ }
+
 
 
 
