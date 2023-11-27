@@ -251,12 +251,16 @@ a{
 }
 
 #about .aboutus_container p {
-    text-align: center;
     font-size: 1.025rem;
     line-height: 1.75rem;
     color: hsla(0, 0%, 100%, .5);
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.about_container{
+    display: flex;
+    gap: 60px;
 }
 
 /* Modernization Section*/
