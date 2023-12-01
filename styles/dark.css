@@ -1,7 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700;800&family=Montserrat&family=Playfair+Display:wght@400;700&family=Roboto:wght@400;700&display=swap');
 :root{
-    --textColor: #FB2576;
-}
+    --textColor: #5333EC;
+    --backgroundColor: #111013;
+    --paragraphColor: #F8F8F8; 
+    --cardBackground: #0F1625;
+
+    /* Original */
+    /* --textColor: #FB2576;
+    --backgroundColor: linear-gradient(86deg, rgba(2, 0, 36, 1) 26%, rgba(10, 6, 46, 1) 55%, rgba(3, 1, 23, 1) 84%, rgba(3, 1, 23, 1) 100%);
+    --paragraphColor: hsla(0, 0%, 100%, .5); 
+    --cardBackground:   #0e1538; */
+} 
 * {
     margin: 0;
     padding: 0;
@@ -17,8 +26,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
     font-size: 14px;
-    background: rgb(2, 0, 36);
-    background: linear-gradient(86deg, rgba(2, 0, 36, 1) 26%, rgba(10, 6, 46, 1) 55%, rgba(3, 1, 23, 1) 84%, rgba(3, 1, 23, 1) 100%);
+    background: var(--backgroundColor)
 }
 
 h1, h2{
@@ -87,7 +95,7 @@ a{
     top: 0;
     position: absolute;
     background: black;
-    opacity: 0.4;
+    opacity: 0.7;
 }
 
 .showcase h1 {
@@ -112,10 +120,9 @@ a{
 
 .showcase p {
     z-index: 100;
-    color: #fff;
     font-size: 1.025rem;
     line-height: 1.75rem;
-    color: hsla(0, 0%, 100%, .5);
+    color: var(--paragraphColor);
     margin-top: 10px;
     ;
 }
@@ -142,8 +149,7 @@ a{
 
 /* Collection */
 .collection {
-    background: rgb(2, 0, 36);
-    background: linear-gradient(86deg, rgba(2, 0, 36, 1) 26%, rgba(10, 6, 46, 1) 55%, rgba(3, 1, 23, 1) 84%, rgba(3, 1, 23, 1) 100%);
+    background: var(--backgroundColor);
 }
 
 .collection_container {
@@ -167,13 +173,13 @@ a{
 .collection_container .collection_text p {
     font-size: 1.025rem;
     line-height: 1.75rem;
-    color: hsla(0, 0%, 100%, .5);
+    color: var(--paragraphColor);
     margin-top: 10px;
 }
 
 .collection_container .collection_card .card {
     /* background-color: rgba(17, 25, 40, 0.75); */
-    background-color: rgba(17, 25, 40, 0.75);
+    background-color: var(--cardBackground);
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.125);
     padding: 20px;
@@ -221,7 +227,7 @@ a{
 .card p {
     font-size: 12px;
     line-height: 17px;
-    color: hsla(0, 0%, 100%, .5);
+    color: var(--paragraphColor);
 }
 
 #about {
@@ -257,7 +263,7 @@ a{
 #about .aboutus_container p {
     font-size: 1.025rem;
     line-height: 1.75rem;
-    color: hsla(0, 0%, 100%, .5);
+    color: var(--paragraphColor);
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -280,7 +286,7 @@ a{
 }
 
 .modernization_container {
-    background-color: #0e1538;
+    background-color: var();
     padding: 20px;
     border-radius: 30px;
 }
@@ -299,7 +305,7 @@ a{
     /* text-align: center; */
     font-size: 1.025rem;
     line-height: 1.75rem;
-    color: hsla(0, 0%, 100%, .5);
+    color: var(--paragraphColor);
     margin-top: 10px;
     margin-bottom: 20px;
 }
@@ -352,7 +358,7 @@ a{
 
 }
 .contact_container{
-    background-color: #0e1538;
+    background-color: var(--cardBackground);
     padding: 50px;
     border-radius: 30px;
     color: #fff;
@@ -391,7 +397,7 @@ a{
 #contact .contact_container p{
     font-size: 1.025rem;
     line-height: 1.75rem;
-    color: hsla(0, 0%, 100%, .5);
+    color: var(--paragraphColor);
     margin-top: 10px;
     margin-bottom: 20px;
 }
@@ -408,8 +414,8 @@ a{
 
 /* Footer */
 #footer{
-    background-color: #0C102E;
-    height: 20vh;
+    background-color: var(--cardBackground);
+    height: 10vh;
 }
 
 .footer_container{
@@ -418,7 +424,7 @@ a{
 
 #footer p{
     text-align: center;
-    font-size: 0.825rem;
+    font-size: 0.925rem;
     line-height: 1.75rem;
     color:#fff;
     margin-top: 10px;
@@ -433,7 +439,7 @@ a{
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: var(--backgroundColor);
     display: none;  
     transition: opacity 0.5s ease-in-out;
     opacity: 0;
@@ -442,7 +448,7 @@ a{
 
 
 .modal-content{
-    background-color: #0e1538;
+    background-color: var();
     margin-top: 100px;
     width: 70%;
     margin-left: auto;
@@ -462,7 +468,7 @@ a{
 .modal-content p{
     font-size: 1.025rem;
     line-height: 1.75rem;
-    color: hsla(0, 0%, 100%, .5);
+    color: var(--paragraphColor);
 }
 
 .modal-header{
@@ -669,3 +675,300 @@ a{
         height: 180vh;
     }
 }
+
+
+/* About CSS */
+
+
+.responsive-container-block {
+    min-height: 75px;
+    height: fit-content;
+    width: 100%;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    justify-content: flex-start;
+  }
+  
+  .text-blk {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    line-height: 25px;
+  }
+  
+  .responsive-container-block.bigContainer {
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .mainImg {
+    color: black;
+    width: 55%;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 5px 10px 7px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  
+  .text-blk.headingText {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 34px;
+    color: var(--textColor);
+    padding-top: 0px;
+    padding-right: 10px;
+    padding-bottom: 0px;
+    padding-left: 10px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+  }
+  
+  .allText {
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 40px;
+    width: 40%;
+    margin: 0 0 0 0;
+  }
+  
+  .text-blk.subHeadingText {
+    color: rgb(102, 102, 102);
+    font-size: 25px;
+    line-height: 34px;
+    font-weight: 700;
+    padding-top: 0px;
+    padding-right: 10px;
+    padding-bottom: 0px;
+    padding-left: 10px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 15px;
+    margin-left: 0px;
+  }
+  
+  .text-blk.description {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    color: var(--paragraphColor);
+    margin-top: 10px;
+  }
+  
+  
+  .responsive-container-block.Container {
+    margin-top: 80px;
+    margin-right: auto;
+    margin-bottom: 50px;
+    margin-left: auto;
+    justify-content: center;
+    align-items: center;
+    max-width: 1320px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+  }
+  
+  .responsive-container-block.Container.bottomContainer {
+    margin-top: 100px;
+    margin-right: 0px;
+    margin-bottom: 50px;
+    margin-left: 0px;
+    flex-direction: row-reverse;
+    margin: 100px auto 50px auto;
+  }
+  
+  .allText.aboveText {
+    margin: 0 0 0 40px;
+  }
+  
+  .allText.bottomText {
+    margin: 0 40px 0 0;
+  }
+  
+  @media (max-width: 1024px) {
+    .responsive-container-block.Container {
+      max-width: 850px;
+    }
+  
+    .mainImg {
+      width: 55%;
+      height: auto;
+      display: none
+    }
+  
+    .text-blk.description {
+      font-size: 20px;
+    }
+  
+    .allText {
+      width: 40%;
+      margin-top: 0px;
+      margin-right: 0px;
+      margin-bottom: 0px;
+      margin-left: 20px;
+    }
+  
+    .responsive-container-block.bigContainer {
+      padding-top: 10px;
+      padding-right: 10px;
+      padding-bottom: 10px;
+      padding-left: 10px;
+    }
+  
+    .text-blk.subHeadingText {
+      font-size: 22px;
+    }
+  
+    .responsive-container-block.Container.bottomContainer {
+      margin: 80px auto 50px auto;
+    }
+  
+    .responsive-container-block.Container {
+      max-width: 830px;
+    }
+  
+    .allText.aboveText {
+      margin: 30px 0 0 40px;
+    }
+  
+    .allText.bottomText {
+      margin: 30px 40px 0 0;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .mainImg {
+      width: 90%;
+    }
+  
+    .allText {
+      width: 100%;
+      margin-top: 0px;
+      margin-right: 0px;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-top: 0px;
+      padding-right: 0px;
+      padding-bottom: 0px;
+      padding-left: 0px;
+    }
+  
+    .responsive-container-block.Container {
+      flex-direction: column;
+      height: auto;
+    }
+  
+    .text-blk.headingText {
+      text-align: center;
+    }
+  
+    .text-blk.subHeadingText {
+      text-align: center;
+      font-size: 25px;
+    }
+  
+    .text-blk.description {
+      text-align: center;
+      font-size: 17px;
+    }
+  
+    .allText {
+      margin-top: 40px;
+      margin-right: 0px;
+      margin-bottom: 0px;
+      margin-left: 0px;
+    }
+  
+    .allText.aboveText {
+      margin: 40px 0 0 0;
+    }
+  
+    .responsive-container-block.Container {
+      margin: 80px auto 50px auto;
+    }
+  
+    .responsive-container-block.Container.bottomContainer {
+      margin: 50px auto 50px auto;
+    }
+  
+    .allText.bottomText {
+      margin: 40px 0 0 0;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .responsive-container-block.Container {
+      padding-top: 10px;
+      padding-right: 0px;
+      padding-bottom: 10px;
+      padding-left: 0px;
+      width: 100%;
+      max-width: 100%;
+    }
+  
+    .mainImg {
+      width: 100%;
+    }
+  
+    .responsive-container-block.bigContainer {
+      padding-top: 10px;
+      padding-right: 25px;
+      padding-bottom: 10px;
+      padding-left: 25px;
+    }
+  
+    .text-blk.subHeadingText {
+      font-size: 25px;
+      padding-top: 0px;
+      padding-right: 0px;
+      padding-bottom: 0px;
+      padding-left: 0px;
+    }
+  
+    .text-blk.description {
+      font-size: 18px;
+      padding-top: 0px;
+      padding-right: 0px;
+      padding-bottom: 0px;
+      padding-left: 0px;
+    }
+  
+    .allText {
+      padding-top: 0px;
+      padding-right: 0px;
+      padding-bottom: 0px;
+      padding-left: 0px;
+      width: 100%
+    }
+  }
