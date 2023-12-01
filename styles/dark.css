@@ -141,7 +141,7 @@ a{
 
 
 /* Collection */
-#collection {
+.collection {
     background: rgb(2, 0, 36);
     background: linear-gradient(86deg, rgba(2, 0, 36, 1) 26%, rgba(10, 6, 46, 1) 55%, rgba(3, 1, 23, 1) 84%, rgba(3, 1, 23, 1) 100%);
 }
@@ -376,6 +376,7 @@ a{
 
 #contact .contact_container textarea{
     border-radius: 8px;
+    padding: 10px;
 }
 
 #contact .contact_container h1{

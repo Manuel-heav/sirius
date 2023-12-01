@@ -7,6 +7,7 @@
     <script src="https://kit.fontawesome.com/5066bb9136.js" crossorigin="anonymous"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <link rel="stylesheet" href="styles/dark.css" id="theme-style">
     <link rel="stylesheet" href="styles/about.css" id="theme-style">
     <link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAADw0LAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABEREAAAAAAAAAAQAAAAAAARERAAAAAAABAAAAAAAAAAEREQAAAAAAAAAAAAAAAAABEREAAAAAAAAQAQAAAAAAABABAAAAAAABEREAAAAAAAAAAAAAAAAAARERAAAAAAAAAAEAAAAAAAEREQAAAAAAAQAAAAAAAAABEREAAAD4PwAA/78AAPg/AAD7/wAA+D8AAP//AAD4PwAA/b8AAP2/AAD4PwAA//8AAPg/AAD/vwAA+D8AAPv/AAD4PwAA" rel="icon" type="image/x-icon">
@@ -38,7 +39,7 @@
     </section>
 
     <!-- Section with some 4 cards -->
-    <section id="collection" id="career" class="particles-js">
+    <section class="collection" id="career" class="particles-js">
         <div class="collection_container">
         <div class="collection_text" data-aos="fade-right"
         data-aos-duration="2000"
@@ -179,7 +180,7 @@
         </div>
         <div class="responsive-container-block Container bottomContainer"  data-aos="fade-up"
         data-aos-duration="1000"
-        data-aos-easing="ease-in-out">
+        data-aos-easing="ease-in-out" id="about">
           <img class="mainImg" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/xpraup2.svg">
           <div class="allText bottomText">
             <p class="text-blk headingText">
@@ -297,12 +298,12 @@
             <p>Use our contact form to get in touch with our consulting team.</p>
             <form action="">
                 <label for="">Name</label>
-                <input type="text" required>
+                <input type="text" required placeholder="Enter your name here..." class="nameForm">
                 <label for="">Email</label>
-                <input type="email" required>
+                <input type="email" required placeholder="Enter your email here..." class="emailForm">
                 <label for="">Message</label>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
-                <button type="submit">Submit</button>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Enter your message here..." class="textForm"></textarea>
+                <button type="submit" class="submitBtn">Submit</button>
             </form>
         </div>
     </section>
