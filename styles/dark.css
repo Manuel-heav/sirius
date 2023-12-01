@@ -155,6 +155,7 @@ a{
 .collection_container {
     height: 80vh;
     width: 90%;
+    margin-top: 30px !important;
     margin: auto;
     display: flex;
     justify-content: center;
