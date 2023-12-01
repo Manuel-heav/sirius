@@ -25,9 +25,6 @@ const closeMenu = document.querySelector(".closeMenu");
 const cards = document.querySelectorAll(".card");
 const closeBtns = document.querySelectorAll(".modal-close");
 const submitBtn = document.querySelector(".submitBtn");
-const nameForm = document.querySelector(".nameForm").value;
-const emailForm = document.querySelector(".emailForm").value;
-const textForm = document.querySelector(".textForm").value;
 
 openMenu.addEventListener("click", (e) => {
   e.preventDefault();
@@ -58,15 +55,18 @@ closeBtns.forEach(function (btn) {
   };
 });
 
-const body =
-  "Name: " +
-  nameForm +
-  "<br/> Email: " +
-  emailForm +
-  "<br/> Message: " +
-  textForm;
-console.log(body);
 submitBtn.addEventListener("click", (e) => {
+  const nameForm = document.getElementById("name").value;
+  const emailForm = document.getElementById("email").value;
+  const textForm = document.getElementById("message").value;
+  const body =
+    "Name: " +
+    nameForm +
+    "<br/> Email: " +
+    emailForm +
+    "<br/> Message: " +
+    textForm;
+
   e.preventDefault();
   Email.send({
     SecureToken: "56101168-c68b-49db-8813-944423ea7d69",
