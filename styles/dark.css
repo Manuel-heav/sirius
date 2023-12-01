@@ -416,7 +416,7 @@ a{
 /* Footer */
 #footer{
     background-color: var(--cardBackground);
-    height: 10vh;
+    height: 15vh;
 }
 
 .footer_container{
